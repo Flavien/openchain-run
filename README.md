@@ -1,16 +1,12 @@
-# Running Openchain
-
-Openchain is an open source distributed ledger technology. It is suited for organizations wishing to issue and manage digital assets in a robust, secure and scalable way. Visit [openchain.org](https://www.openchain.org/) for more information.
-
-The full documentation for Openchain is available at [docs.openchain.org](https://docs.openchain.org/).
+# How to run Openchain
 
 This document explains how to run Openchain without using Docker. This process relies on [NuGet](https://www.nuget.org/) to pull the required Openchain packages.
 
-# Prerequisites
+## Prerequisites
 
 Install the [.NET Command Line Interface](https://github.com/dotnet/cli). This is cross-platform and runs on Windows, Linux and OS X.
 
-# Installation
+## Installation
 
 Clone this repository:
 
@@ -32,9 +28,9 @@ Run Openchain:
 $ dnx start
 ```
 
-# Configuration
+## Configuration
 
-## Referencing provider packages
+### Referencing provider packages
 
 The ``dependencies`` section of the project.json file references the external providers pulled from NuGet:
 
@@ -53,7 +49,7 @@ Make sure you run ``dnu restore`` again after modifying project.json.
 
 You can then edit the ``Webroot/App_Data/config.json`` file to [reference the providers you want to use](https://docs.openchain.org/en/latest/general/configuration.html).
 
-# Updating the target platform
+### Updating the target platform
 
 The ``frameworks`` section of the project.json file lists the available target frameworks:
 
