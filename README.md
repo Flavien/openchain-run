@@ -38,12 +38,13 @@ The ``dependencies`` section of the project.json file references the external pr
 "dependencies": {
   "Openchain.Server": "0.5.0-rc1",
   
-  "Openchain.Sqlite": "0.5.0-rc1-*",
-  "Openchain.Validation.PermissionBased": "0.5.0-rc1-*"
+  "Openchain.Sqlite": "0.5.0-rc1",
+  "Openchain.Validation.PermissionBased": "0.5.0-rc1",
+  "Openchain.Anchoring.Blockchain": "0.5.0-rc1"
 },
 ```
 
-By defaut, this imports the [Sqlite storage engine](https://www.nuget.org/packages/Openchain.Sqlite) (Openchain.Sqlite) as well as the [permission-based validation engine](https://www.nuget.org/packages/Openchain.Validation.PermissionBased) (Openchain.Validation.PermissionBased). Update this list with the providers you want to use.
+By defaut, this imports the [Sqlite storage engine](https://www.nuget.org/packages/Openchain.Sqlite) (Openchain.Sqlite), the [permission-based validation module](https://www.nuget.org/packages/Openchain.Validation.PermissionBased) (Openchain.Validation.PermissionBased), and the Blockchain anchoring module (Openchain.Anchoring.Blockchain). Update this list with the providers you want to use.
 
 Make sure you run ``dnu restore`` again after modifying project.json.
 
